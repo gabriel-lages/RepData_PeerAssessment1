@@ -101,7 +101,7 @@ ggplot(data=average_all, aes(x=interval, y=steps)) +
   labs(x="5 minute interval", y="Average number of steps (across all days)", title="Average daily activity")
 ```
 
-![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png) 
+![plot of chunk unnamed-chunk-9](https://github.com/gabriel-lages/RepData_PeerAssessment1/blob/master/Figure/Figure1.png) 
 
 Now we need to discover Which 5-minute interval contains the maximum number of steps
 
