@@ -68,7 +68,7 @@ qplot(steps , data=stepsperday, geom="histogram",binwidth=3000) +
   labs(x="Total steps per day", title="Histogram of the total number of steps taken each day")
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-6](https://github.com/gabriel-lages/RepData_PeerAssessment1/blob/master/Figure/Figure1.png) 
 
 Another important step in the analysis is to calculate the mean and median of the total number of steps taken per day
 
@@ -101,7 +101,7 @@ ggplot(data=average_all, aes(x=interval, y=steps)) +
   labs(x="5 minute interval", y="Average number of steps (across all days)", title="Average daily activity")
 ```
 
-![plot of chunk unnamed-chunk-9](https://github.com/gabriel-lages/RepData_PeerAssessment1/blob/master/Figure/Figure1.png) 
+![plot of chunk unnamed-chunk-9](https://github.com/gabriel-lages/RepData_PeerAssessment1/blob/master/Figure/Figure2.png) 
 
 Now we need to discover Which 5-minute interval contains the maximum number of steps
 
@@ -173,7 +173,7 @@ qplot(steps , data=stepsperday_filled, geom="histogram",binwidth=3000) +
   labs(x="Total steps per day", title="Histogram of the total number of steps taken each day (NA's Filled)")
 ```
 
-![plot of chunk unnamed-chunk-16](figure/unnamed-chunk-16-1.png) 
+![plot of chunk unnamed-chunk-16](https://github.com/gabriel-lages/RepData_PeerAssessment1/blob/master/Figure/Figure3.png) 
 
 And the mean and median of the total number of steps taken per day
 
@@ -203,7 +203,7 @@ p2<- qplot(steps , data=stepsperday_filled, geom="histogram",binwidth=3000) +
 grid.arrange(p1, p2, ncol = 1)
 ```
 
-![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17-1.png) 
+![plot of chunk unnamed-chunk-17](https://github.com/gabriel-lages/RepData_PeerAssessment1/blob/master/Figure/Figure4.png) 
 
 Measure | Removing Missing Values|Imputing Missing Values
 --------|------------------------|-----------------------------------
@@ -260,4 +260,4 @@ And now, plot the Time Series
 ggplot(averages_day, aes(interval, steps, colour = day)) + geom_line() + facet_grid(day ~ .) + labs(x="5 minute interval", y="Average number of steps (across all days)", title="Average weekends x weekdays")
 ```
 
-![plot of chunk unnamed-chunk-22](figure/unnamed-chunk-22-1.png) 
+![plot of chunk unnamed-chunk-22](https://github.com/gabriel-lages/RepData_PeerAssessment1/blob/master/Figure/Figure5.png) 
